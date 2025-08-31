@@ -1,5 +1,5 @@
 # Fog and Storm Detection - Climate Risk and Disaster Management
-# Internship Project (AICTE x Shell x Edunet Foundation)
+ Internship Project (AICTE x Shell x Edunet Foundation)
 
 ## 📌 Project Overview
 This project focuses on understanding weather conditions related to **Fog and Storm Detection**.  
