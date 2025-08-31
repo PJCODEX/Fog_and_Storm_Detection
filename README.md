@@ -1,7 +1,7 @@
 # Fog and Storm Detection - Climate Risk and Disaster Management
- Internship Project (AICTE x Shell x Edunet Foundation)
+ **Internship Project (AICTE x Shell x Edunet Foundation)**
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on understanding weather conditions related to **Fog and Storm Detection**.  
 It is part of the Week 1 Project under the domain of **Climate Risk and Disaster Management**.
 
@@ -15,7 +15,7 @@ A small dataset (`fog_storm_dataset.csv`) has been created that includes:
 - Fog (0/1)  
 - Storm (0/1)  
 
-## 🛠 Steps Performed
+##  Steps Performed
 1. Imported necessary libraries (Pandas, NumPy).  
 2. Loaded the dataset into a DataFrame.  
 3. Explored the dataset using:  
@@ -28,7 +28,7 @@ A small dataset (`fog_storm_dataset.csv`) has been created that includes:
 - `fog_storm_project.ipynb` → Jupyter Notebook with analysis  
 - `README.md` → Project description and instructions  
 
-## 🚀 How to Run
+##  How to Run
 1. Clone this repository.  
 2. Open `fog_storm_project.ipynb` in Jupyter Notebook / Jupyter Lab.  
 3. Run all cells to reproduce the analysis.  
