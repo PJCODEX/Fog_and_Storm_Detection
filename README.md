@@ -73,30 +73,30 @@ The dataset (`fog_storm_dataset.csv`) contains **daily weather observations** wi
 
 ---
 
-## Visualizations  
+# Visualizations  
 
-### 🔹 Data Distribution  
+## 🔹 Data Distribution  
  
 
-### 🔹 Outlier Detection  
+## 🔹 Outlier Detection  
 
 
-### 🔹 Time-Series Trends  
+## 🔹 Time-Series Trends  
 
 
-### 🔹 Visibility with Fog/Storm Markers  
+## 🔹 Visibility with Fog/Storm Markers  
 
 
-### 🔹 Correlation Heatmap  
+## 🔹 Correlation Heatmap  
 
 
-### 🔹 Pairplot – Fog  
+## 🔹 Pairplot – Fog  
 
 
-### 🔹 Pairplot – Storm  
+## 🔹 Pairplot – Storm  
 
 
-### 🔹 Fog vs Storm Events  
+## 🔹 Fog vs Storm Events  
 
 ---
 
