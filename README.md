@@ -1,36 +1,136 @@
-# Fog and Storm Detection - Climate Risk and Disaster Management
+Fog and Storm Detection – Climate Risk & Disaster Management
+ Project Overview
 
-## 📌 Project Overview
-This project focuses on understanding weather conditions related to **Fog and Storm Detection**.  
-It is part of the Week 1 Project under the domain of **Climate Risk and Disaster Management**.
+This project focuses on analyzing weather conditions related to Fog and Storm Detection.
+It is part of the Climate Risk and Disaster Management Domain and extends the Week 1 project with advanced data cleaning, exploratory data analysis (EDA), correlation analysis, and event insights.
 
-## 📊 Dataset
-A small dataset (`fog_storm_dataset.csv`) has been created that includes:
-- Date  
-- Temperature (°C)  
-- Humidity (%)  
-- Wind Speed (km/h)  
-- Visibility (km)  
-- Fog (0/1)  
-- Storm (0/1)  
+The goal is to understand how atmospheric conditions (temperature, humidity, wind, visibility) influence fog and storm formation, and how these insights can contribute to climate risk assessment and disaster management.
 
-## 🛠 Steps Performed
-1. Imported necessary libraries (Pandas, NumPy).  
-2. Loaded the dataset into a DataFrame.  
-3. Explored the dataset using:  
-   - `.info()` to view data types and non-null counts  
-   - `.describe()` to get statistical summary  
-   - `.isnull().sum()` to check for missing values  
+📊 Dataset
 
-## 📂 Files in Repository
-- `fog_storm_dataset.csv` → Dataset file  
-- `fog_storm_project.ipynb` → Jupyter Notebook with analysis  
-- `README.md` → Project description and instructions  
+The dataset (fog_storm_dataset.csv) contains daily weather observations with the following columns:
 
-## 🚀 How to Run
-1. Clone this repository.  
-2. Open `fog_storm_project.ipynb` in Jupyter Notebook / Jupyter Lab.  
-3. Run all cells to reproduce the analysis.  
+date → Observation date
 
-## 🏁 Expected Outcome
-By completing this project, we understand how to explore and analyze a dataset in the context of **climate risks**, focusing on fog and storm detection.
+temperature_c → Temperature in °C
+
+humidity_pct → Relative humidity (%)
+
+wind_kmh → Wind speed (km/h)
+
+visibility_km → Visibility distance (km)
+
+fog → Fog event (1 = Yes, 0 = No)
+
+storm → Storm event (1 = Yes, 0 = No)
+
+Dataset Size: 10 rows × 7 columns
+
+ Steps Performed
+
+Data Import & Setup
+
+Imported libraries: Pandas, NumPy, Matplotlib, Seaborn.
+
+Loaded dataset and standardized column names.
+
+Data Cleaning
+
+Converted columns to correct datatypes.
+
+Removed duplicates.
+
+Handled missing values with interpolation.
+
+Feature Engineering
+
+Extracted new time features: year, month, day, week, dayofweek, dayofyear.
+
+Exploratory Data Analysis (EDA)
+
+Distribution plots (histograms + KDE).
+
+Boxplots to detect outliers.
+
+Time-series visualization of weather variables.
+
+Markers for fog and storm events.
+
+Correlation Analysis
+
+Pearson & Spearman correlation heatmaps.
+
+Pairplots for visualizing relationships with fog/storm.
+
+Event Relationship Analysis
+
+Cross-tabulation of fog vs storm occurrences.
+
+Stacked bar charts for co-occurrence patterns.
+
+📂 Files in Repository
+
+fog_storm_dataset.csv → Original dataset.
+
+fog_storm_dataset_clean.csv → Cleaned dataset.
+
+fog_storm_project.ipynb → Jupyter Notebook with full analysis.
+
+README.md → Project description and insights.
+
+📈 Key Insights
+
+Visibility decreases significantly during fog events.
+
+High humidity + low temperature → higher fog probability.
+
+Storms are associated with stronger winds, sometimes overlapping with fog.
+
+Cross-tab results:
+
+83% of fog events had no storm.
+
+75% of storm events occurred without fog.
+
+Few days recorded both fog and storm together.
+
+ Expected Outcome
+
+By completing this project, we learn how to:
+
+Clean and preprocess weather datasets.
+
+Perform EDA and visualization for climate-related events.
+
+Analyze the relationship between fog and storm occurrences.
+
+Draw insights relevant for climate risk & disaster management.
+
+ How to Run
+
+Clone this repository.
+
+Open fog_storm_project.ipynb in Jupyter Notebook / Jupyter Lab.
+
+Run all cells to reproduce the analysis and visualizations.
+
+🌍 Relevance to Climate Risk & Disaster Management
+
+Fog → causes reduced visibility, transportation delays, and accidents.
+
+Storms → cause infrastructure damage, flooding, and high-risk events.
+
+Overlap analysis supports early warning systems and policy planning for transportation, aviation, and rural safety.
+
+🔮 Future Improvements
+
+Extend dataset with long-term weather records.
+
+Use machine learning models to predict fog/storm events.
+
+Integrate real-time weather APIs for live monitoring.
+
+Build an interactive dashboard for decision-makers.
+
+
+✨ Built with Python, Pandas, Matplotlib, Seaborn
