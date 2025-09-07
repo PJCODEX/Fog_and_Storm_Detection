@@ -58,7 +58,6 @@ The dataset (`fog_storm_dataset.csv`) contains **daily weather observations** wi
 - `fog_storm_dataset_clean.csv` → Cleaned dataset.  
 - `fog_storm_project.ipynb` → Jupyter Notebook with full analysis.  
 - `README.md` → Project description and insights.  
-- `/images` → Folder containing saved plots.  
 
 ---
 
