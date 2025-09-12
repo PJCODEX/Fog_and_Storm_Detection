@@ -2,7 +2,7 @@
 
 ##  Project Overview  
 This project focuses on analyzing weather conditions related to **Fog and Storm Detection**.  
-It is part of the **Climate Risk and Disaster Management Domain** and extends the **Week 1 project** with advanced data cleaning, exploratory data analysis (EDA), correlation analysis, and event insights.  
+It is part of the **Climate Risk and Disaster Management Domain** and extends the **Week 1 project** with advanced data cleaning, exploratory data analysis (EDA), correlation analysis, machine learning prediction, and event insights.  
 
 The goal is to understand how atmospheric conditions (temperature, humidity, wind, visibility) influence fog and storm formation, and how these insights can contribute to **climate risk assessment and disaster management**.  
 
@@ -23,10 +23,10 @@ The dataset (`fog_storm_dataset.csv`) contains **daily weather observations** wi
 
 ---
 
-## 🛠 Steps Performed  
+##  Steps Performed  
 
 1. **Data Import & Setup**  
-   - Imported libraries: Pandas, NumPy, Matplotlib, Seaborn.  
+   - Imported libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn.  
    - Loaded dataset and standardized column names.  
 
 2. **Data Cleaning**  
@@ -51,12 +51,19 @@ The dataset (`fog_storm_dataset.csv`) contains **daily weather observations** wi
    - Cross-tabulation of fog vs storm occurrences.  
    - Stacked bar charts for co-occurrence patterns.  
 
+7. **Machine Learning – Random Forest Model**  
+   - Built a **Random Forest Classifier** to predict fog and storm events.  
+   - Input features: `temperature_c`, `humidity_pct`, `wind_kmh`, `visibility_km`.  
+   - Target variables: `fog`, `storm`.  
+   - Model evaluation with **accuracy score and confusion matrix**.  
+   - Provided prediction examples for unseen weather conditions.  
+
 ---
 
-## 📂 Files in Repository  
+## Files in Repository  
 - `fog_storm_dataset.csv` → Original dataset.  
 - `fog_storm_dataset_clean.csv` → Cleaned dataset.  
-- `fog_storm_project.ipynb` → Jupyter Notebook with full analysis.  
+- `fog_storm_project.ipynb` → Jupyter Notebook with full analysis + ML model.  
 - `README.md` → Project description and insights.  
 
 ---
@@ -70,33 +77,29 @@ The dataset (`fog_storm_dataset.csv`) contains **daily weather observations** wi
   - 83% of fog events had **no storm**.  
   - 75% of storm events occurred **without fog**.  
   - Few days recorded **both fog and storm** together.  
+- **Random Forest model** successfully predicts fog and storm events with high accuracy on the dataset.  
 
 ---
 
 # Visualizations  
 
-**🔹 Data Distribution**
- 
+**🔹 Data Distribution**  
 
-**🔹 Outlier Detection**
+**🔹 Outlier Detection**  
 
-
-**🔹 Time-Series Trends** 
-
+**🔹 Time-Series Trends**  
 
 **🔹 Visibility with Fog/Storm Markers**  
 
-
-**🔹 Correlation Heatmap**
-
+**🔹 Correlation Heatmap**  
 
 **🔹 Pairplot – Fog**  
 
-
 **🔹 Pairplot – Storm**  
 
-
 **🔹 Fog vs Storm Events**  
+
+**🔹 ML Model Performance (Confusion Matrix & Predictions)**  
 
 ---
 
@@ -105,30 +108,24 @@ By completing this project, we learn how to:
 - Clean and preprocess weather datasets.  
 - Perform **EDA and visualization** for climate-related events.  
 - Analyze the relationship between **fog and storm** occurrences.  
+- Build a **machine learning model** to predict weather events.  
 - Draw insights relevant for **climate risk & disaster management**.  
 
 ---
 
 ##  How to Run  
-1. Clone this repository.  
+1. Clone this repository : git clone https://github.com/PJCODEX/Fog_and_Storm_Detection.git
 2. Open `fog_storm_project.ipynb` in Jupyter Notebook / Jupyter Lab.  
 3. Run all cells to reproduce the analysis and visualizations.  
+4. Run the **Random Forest model** section for predictions.  
 
 ---
 
 ##  Relevance to Climate Risk & Disaster Management  
 - **Fog** → causes reduced visibility, transportation delays, and accidents.  
 - **Storms** → cause infrastructure damage, flooding, and high-risk events.  
-- **Overlap analysis** supports **early warning systems** and **policy planning** for transportation, aviation, and rural safety.  
+- **Machine learning predictions** support **early warning systems** and **policy planning** for transportation, aviation, and rural safety.  
 
 ---
 
-##  Future Improvements  
-- Extend dataset with **long-term weather records**.  
-- Use **machine learning models** to predict fog/storm events.  
-- Integrate **real-time weather APIs** for live monitoring.  
-- Build an **interactive dashboard** for decision-makers.  
-
----
-
-✨ Built with **Python, Pandas, Matplotlib, Seaborn**  
+✨ Built with **Python, Pandas, Matplotlib, Seaborn, Scikit-learn**  
