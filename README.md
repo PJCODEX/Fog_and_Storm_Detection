@@ -114,7 +114,7 @@ By completing this project, we learn how to:
 ---
 
 ##  How to Run  
-1. Clone this repository.  
+1. Clone this repository : https://github.com/PJCODEX/Fog_and_Storm_Detection.git
 2. Open `fog_storm_project.ipynb` in Jupyter Notebook / Jupyter Lab.  
 3. Run all cells to reproduce the analysis and visualizations.  
 4. Run the **Random Forest model** section for predictions.  
